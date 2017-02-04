@@ -38,5 +38,8 @@ install:
 script: ./testrunner.sh
 
 notifications:
-    on_success: always
-    on_failure: always
+  email:
+    recipients:
+      - karsam555@yahoo.com
+    on_success: always # default: change
+    on_failure: always # default: always
